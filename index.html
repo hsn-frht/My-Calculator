@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="calculator-grid">
+        <div class="output">
+            <div class="previous-operant" data-previous-operand></div>
+            <div class="current-operant" data-current-operand></div>
+        </div>
+        <button class="calc-button util " data-clear>AC</button>
+        <button class="calc-button util" data-delete>DEL</button>
+        <button class="blank"></button>
+        <button class="calc-button operator" data-operate value="/">÷</button>
+        <button class="calc-button" data-number value="7">7</button>
+        <button class="calc-button" data-number value="8">8</button>
+        <button class="calc-button" data-number value="9">9</button>
+        <button class="calc-button operator" data-operate value="*">×</button>
+        <button class="calc-button" data-number value="4">4</button>
+        <button class="calc-button" data-number value="5">5</button>
+        <button class="calc-button" data-number value="6">6</button>
+        <button class="calc-button operator" data-operate value="-">−</button>
+        <button class="calc-button" data-number value="1">1</button>
+        <button class="calc-button" data-number value="2">2</button>
+        <button class="calc-button" data-number value="3">3</button>
+        <button class="calc-button operator" data-operate value="+">+</button>
+        <button class="calc-button" easter-egg><i class="fa fa-bell"></i></button>
+        <button class="calc-button" data-number value="0">0</button>
+        <button class="calc-button" data-number value=".">.</button>
+        <button class="calc-button operator" data-equals>=</button>
+    </div>
+
+</body>
+</html>
