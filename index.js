@@ -119,4 +119,29 @@ easterEgg.addEventListener("click",()=>{
 if (confirm("Check out my portfolio?")) {
   window.location.href = "./portreplacement.html";
 }
+
+});
+//adding key press for desktop
+document.addEventListener("keydown",(event)=>{
+    if( event.key >=0 && event.key <=9){
+        console.log("number");
+        calculator.append(event.key);
+        calculator.updateDisplay();
+    }
+    if (event.key === "Enter"){
+        calculator.compute();
+        calculator.updateDisplay();}
+    
+    if(event.key ==="+"||event.key ==="-"||event.key ==="*"||event.key ==="/"){
+        calculator.chooseOperation(event.key);
+        calculator.updateDisplay();
+    }
+    if (event.key==="Escape"){
+        calculator.clear();
+        calculator.updateDisplay();
+    }
+    if(event.key === "Backspace"){
+        calculator.delete();
+    calculator.updateDisplay();
+    }
 });
